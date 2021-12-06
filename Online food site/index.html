@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        FoodPlanet Restaurant Site
+    </title>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b1567ecfb7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+        $('#icon').click(function(){
+            $('ul').toggleClass('show');
+        });
+    });
+    </script>
+</head> 
+
+<body>
+    <div id="home">
+        <img src="img\background.jpg" id="background">
+        <header id="head">
+            <img id="logo" src="img\logo.jpg">
+            <nav id="nav_bar">
+                <div class="active"><a href="#"><i class="fa fa-home"></i><strong>Home</strong></a></div>
+                <div ><a href="#"><i class="fa fa-clone"></i><strong>Services</strong></a></div>
+                <div ><a href="#"><i class="fa fa-clone"></i><strong>Menu</strong></a></div>
+                <div ><a href="#"><i class="fa fa-phone"></i><strong>Contact Us</strong></a></div>
+                <div ><a href="#"><i class="fa fa-phone"></i><strong>About Us</strong></a></div>
+                <label id="icon">
+                    <i class="fas fa-bars"></i>
+               </label>
+            </nav>
+        </header>
+        <div id="name">
+            <h1><b>Food Planet Restaurant</b></h1>
+            <h3>We're Better... We're Tastier... We are Fresher... </h3>
+        </div>
+    </div>
+    <main id="contain">
+        <img src="img\online-food.jpg" id="online">
+        <div id="order">
+            <h3>Hurry Up! Order Now and get upto 25% off!</h3>
+            <p>We are now offering home deliveries.</p>
+            <button class="btn">Order Now <i class="fas fa-shopping-cart" style="font-size: 17px;"></i></button>
+        </div>
+    </main>
+    <h1 id="services">Our Services</h1>
+    <div class="container">
+
+        <div class="box">
+            <a href="">
+                <h2 class="select">Catering</h2>
+            </a>
+            <i class="fas fa-utensils"></i>
+            <p>We are now also providing Catering services for family functions, events and many more.</p>
+        </div>
+        <div class="box">
+            <a href="">
+                <h2 class="select">Reservations</h2>
+            </a>
+            <i class="fas fa-chair"></i><i class="fas fa-chair"></i>
+            <p>You can reserve your seats just by sitting where ever you are.</p>
+        </div>
+    </div>
+    <h1 id="ourmenu">Our Menu</h1>
+    <div class="container">
+        <div class="menuitem"><img src="img\burger.jpg" class="img">
+            <h3>Burger<br>Rs.100</h3><button class="btn">Order Now <i class="fas fa-shopping-cart"
+                    style="font-size: 17px;"></i></button>
+        </div>
+        <div class="menuitem"><img src="img\Noodles.jpg" class="img">
+            <h3>Noodles<br>Rs.200</h3><button class="btn">Order Now <i class="fas fa-shopping-cart"
+                    style="font-size: 17px;"></i></button>
+        </div>
+        <div class="menuitem"><img src="img\fri.jpg" class="img">
+            <h3>Fries<br>Rs.100</h3><button class="btn">Order Now <i class="fas fa-shopping-cart"
+                    style="font-size: 17px;"></i></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="menuitem"><img src="img\pizza.jpg" class="img">
+            <h3>Pizza<br>Rs.200</h3><button class="btn">Order Now <i class="fas fa-shopping-cart"
+                    style="font-size: 17px;"></i></button>
+        </div>
+        <div class="menuitem"><img src="img\roll.jpg" class="img">
+            <h3>Rolls<br>Rs.100</h3><button class="btn">Order Now <i class="fas fa-shopping-cart"
+                    style="font-size: 17px;"></i></button>
+        </div>
+        <div class="menuitem"><img src="img\sup.jpg" class="img">
+            <h3>Soup<br>Rs.100</h3><button class="btn">Order Now <i class="fas fa-shopping-cart"
+                    style="font-size: 17px;"></i></button>
+        </div>
+        <div class="menuitem"><img src="img\icecream.webp" class="img">
+            <h3>Ice Creram<br>Rs.150</h3><button class="btn">Order Now <i class="fas fa-shopping-cart"
+                    style="font-size: 17px;"></i></button>
+        </div>
+    </div>
+    <footer>
+        <div id="cont">
+            <h1>Contact Us</h1>
+            <div id="info">
+                <div class="form">Name:<input type="text" class="inp" id="urname" value=""><br></div>
+                <div class="form">Email Address:<input type="text" class="inp" id="email" value=""><br></div>
+                <div class="form">Contact No.:<input type="text" class="inp" id="cntct" value=""><br></div>
+                <div class="form">Message:<input type="text" class="inp" id="mess" value=""><br></div>
+            </div>
+            <button class="btn" id="subbtn">Submit</button><br>
+            <div id="links">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <address>
+                117/Q/387 Shashtri Nagar, Mumbai - 786543 <br> Contact No. 7836486312
+            </address>
+        </div>
+    </footer>
+
+</body>
+<!-- Contact info details -->
+<!-- If you have any queries related to the restaurant.Kindly fill the following form, we will get back to you as soon as possible. -->
+
+</html>
